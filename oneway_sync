@@ -16,6 +16,7 @@ FILES=(
   ".vimrc"
   ".config/helix/config.toml"
   ".config/helix/languages.toml"
+  ".config/swappy/config"
 )
 
 # Ignore patterns (rsync-style).

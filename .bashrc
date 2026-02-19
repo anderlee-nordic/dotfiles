@@ -140,7 +140,13 @@ if [ -f ~/.nrfutil/share/nrfutil-completion/scripts/bash/setup.bash ]; then
 fi
 
 # alias for zephyr venv
-alias venv_active='source ~/zephyrproject/.venv/bin/activate'
+alias venv_active='source ~/IronSide_SE/.venv/bin/activate'
 
 # alias for opening fzf path
 alias find_open='hx $(fzf)'
+
+# alias for swappy
+alias gnswappy='gnome-screenshot -a -f /tmp/screenshot.png && swappy -f /tmp/screenshot.png && rm /tmp/screenshot.png'
+
+# alias for copying fzf path
+alias find_copy='fzf | wl-copy'

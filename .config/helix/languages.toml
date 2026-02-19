@@ -38,7 +38,7 @@ language-servers = ["clangd"]
 
 [language-server.clangd]
 command = "clangd"
-# args = ["--compile-commands-dir=build"]
+args = ["--background-index"]
 
 ########## Groovy ########## 
 [[language]]
