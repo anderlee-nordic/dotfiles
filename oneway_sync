@@ -80,6 +80,7 @@ for f in "${FILES[@]}"; do
     echo "====================================================="
   else
     echo "WARN: source missing, skipping: $src" >&2
+    echo "====================================================="
   fi
 done
 
