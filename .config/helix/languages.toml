@@ -1,7 +1,7 @@
 ########## Python ########## 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff"]
+language-servers = ["pyright", "ruff", "merge-conflict-assistant"]
 roots = ["pyproject.toml", "setup.py", ".project", ".pydevproject", ".git"]
 
 [language-server.pyright]
@@ -45,7 +45,7 @@ args = ["--background-index"]
 name = "groovy"
 scope = "source.groovy"
 file-types = ["groovy", "gradle", "Jenkinsfile", "nf"]
-language-servers = ["groovyls"]
+language-servers = ["groovyls", "merge-conflict-assistant"]
 
 [language-server.groovyls]
 command = "java"
@@ -59,3 +59,12 @@ language-servers = [ "harper-ls" ]
 [language-server.harper-ls]
 command = "harper-ls"
 args = ["--stdio"]
+
+########## Markdown ##########
+[[language]]
+name = "markdown"
+language-servers = ["harper-ls"]
+
+########## Merge conflict ##########
+[language-server.merge-conflict-assistant]
+command = "merge-conflict-assistant"

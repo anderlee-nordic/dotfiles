@@ -12,6 +12,7 @@ configure helix
 - install clangd
 - install groovy lsp from [GitHub](https://github.com/GroovyLanguageServer/groovy-language-server)
 - install harper-ls from [GitHub](https://github.com/Automattic/harper)
+- install merge-conflict-assistant from [GitHub](https://github.com/shaleh/merge-conflict-assistant)
 - configure config.toml
 - configure languages.toml
 
