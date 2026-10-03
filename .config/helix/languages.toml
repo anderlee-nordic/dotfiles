@@ -68,3 +68,4 @@ language-servers = ["harper-ls"]
 ########## Merge conflict ##########
 [language-server.merge-conflict-assistant]
 command = "merge-conflict-assistant"
+

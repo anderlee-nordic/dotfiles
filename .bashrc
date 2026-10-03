@@ -138,7 +138,7 @@ if [ -f ~/.nrfutil/share/nrfutil-completion/scripts/bash/setup.bash ]; then
 fi
 
 # alias for zephyr venv
-alias venv_active='source ~/IronSide_SE/.venv/bin/activate'
+alias venv_active='source ~/ironsdk-releases/.venv/bin/activate'
 
 # alias for opening fzf path
 alias find_open='hx $(fzf)'
