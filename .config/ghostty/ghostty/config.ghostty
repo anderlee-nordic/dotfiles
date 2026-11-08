@@ -97,6 +97,11 @@ copy-on-select = false
 # Hide the mouse pointer while typing.
 mouse-hide-while-typing = false
 
+# Scroll speed multiplier. Lower = slower.
+# Newer versions take separate values for touchpads (precision)
+# and wheel clicks (discrete).
+mouse-scroll-multiplier = precision:0.5,discrete:0.5
+
 # Ask for confirmation before closing a window or tab that still
 # has a running process.
 confirm-close-surface = true
