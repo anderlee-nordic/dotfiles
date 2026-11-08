@@ -1,7 +1,10 @@
 ########## Python ########## 
 [[language]]
 name = "python"
-language-servers = ["pyright", "ruff", "merge-conflict-assistant"]
+language-servers = [
+  "pyright", "ruff", "merge-conflict-assistant",
+  { name = "pytest-ls", except-features = ["inlay-hints"] },
+]
 roots = ["pyproject.toml", "setup.py", ".project", ".pydevproject", ".git"]
 
 [language-server.pyright]
@@ -19,6 +22,9 @@ args = ["server"]
 args = ["--ignore", "E501, E402"]
 [language-server.ruff.config.settings.lint]
 select = ["W"]
+
+[language-server.pytest-ls]
+command = "pytest-language-server"
 
 ########## Bash ########## 
 [[language]]

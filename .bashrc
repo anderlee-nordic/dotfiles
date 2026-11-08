@@ -137,8 +137,8 @@ if [ -f ~/.nrfutil/share/nrfutil-completion/scripts/bash/setup.bash ]; then
     . ~/.nrfutil/share/nrfutil-completion/scripts/bash/setup.bash
 fi
 
-# alias for zephyr venv
-alias venv_active='source ~/ironsdk-releases/.venv/bin/activate'
+# alias for IIK venv
+alias venv_active='source ~/ironside-integration-kit/.venv/bin/activate'
 
 # alias for opening fzf path
 alias find_open='hx $(fzf)'
@@ -148,3 +148,4 @@ alias find_copy='fzf | wl-copy'
 
 # alias for finding processes
 alias psfind='ps -eo user,pid,stat,command | fzf --exact -i -q'
+source /home/anle/.local/share/leaf/completions/leaf.bash

@@ -1,0 +1,140 @@
+# ~/.config/ghostty/config
+# Reload:   Ctrl+Shift+,
+# Validate: ghostty +validate-config
+# All options + docs: ghostty +show-config --default --docs
+
+# ---------------------------------------------------------------
+# Theme
+# ---------------------------------------------------------------
+# Color scheme. Use a single name, or "light:X,dark:Y" to switch
+# automatically with the system appearance.
+# Browse available themes with: ghostty +list-themes
+theme = light:Argonaut,dark:Argonaut
+
+# ---------------------------------------------------------------
+# Font
+# ---------------------------------------------------------------
+# Primary font family. Must match a name from: ghostty +list-fonts
+font-family = "Adwaita Mono"
+
+# Additional font families act as fallbacks, used for glyphs the
+# primary font lacks (icons, symbols, powerline). Order matters.
+font-family = "Symbols Nerd Font Mono"
+
+# Font size in points.
+font-size = 10
+
+# Extra vertical space per cell (line spacing). Accepts a percentage
+# or pixels; negative values tighten. Also affects how many rows fit
+# in the window.
+adjust-cell-height = 1
+
+# Extra horizontal space per cell (letter spacing).
+# adjust-cell-width = 0
+
+# Toggle OpenType features. "-calt" disables contextual alternates,
+# which is how most programming ligatures are implemented.
+# font-feature = -calt
+
+# ---------------------------------------------------------------
+# Window / padding
+# ---------------------------------------------------------------
+# Horizontal padding between the window edge and the text grid,
+# in pixels.
+window-padding-x = 4
+
+# Vertical padding between the window edge and the text grid,
+# in pixels.
+window-padding-y = 4
+
+# true: split leftover pixels evenly around the grid.
+# false: keep leftover pixels at the bottom/right edge.
+window-padding-balance = true
+
+# How the padding area is colored. "extend" continues the edge
+# cells' background color into the padding, which hides gaps next
+# to full-width bars (e.g. a multiplexer status line).
+# window-padding-color = extend
+
+# Window decorations (title bar, borders). Linux values include
+# true/false and auto, client, server, none; check your build's docs.
+window-decoration = server
+
+# Window opacity: 1.0 is opaque, lower values are more transparent.
+# background-opacity = 1.0
+
+# Blur behind a transparent window (compositor support required).
+# background-blur-radius = 20
+
+# Start new windows in fullscreen.
+# fullscreen = false
+
+# ---------------------------------------------------------------
+# Cursor
+# ---------------------------------------------------------------
+# Cursor shape: block, bar, or underline.
+cursor-style = block
+
+# Whether the cursor blinks.
+cursor-style-blink = true
+
+# Override the cursor color from the theme.
+cursor-color = #2e9e44
+
+# ---------------------------------------------------------------
+# Behavior
+# ---------------------------------------------------------------
+# Scrollback buffer size in bytes, per terminal surface.
+# Terminal multiplexers keep their own separate history.
+scrollback-limit = 10000000
+
+# Copy selected text automatically.
+# false: disabled
+# true: primary selection only (middle-click paste)
+# clipboard: system clipboard as well
+copy-on-select = false
+
+# Hide the mouse pointer while typing.
+mouse-hide-while-typing = false
+
+# Ask for confirmation before closing a window or tab that still
+# has a running process.
+confirm-close-surface = true
+
+# Shell integration (prompt marking, working-directory tracking,
+# etc). "detect" picks the integration from your shell.
+shell-integration = detect
+
+# New windows, tabs, and splits start in the current surface's
+# working directory.
+window-inherit-working-directory = true
+
+# ---------------------------------------------------------------
+# Notifications
+# ---------------------------------------------------------------
+# Allow programs to send desktop notifications via the OSC 9 and
+# OSC 777 escape sequences.
+desktop-notifications = true
+
+# How a terminal bell (BEL, \a) alerts you. Comma-separated flags;
+# prefix with "no-" to disable one.
+#   system:    use the desktop's bell/sound behavior
+#   audio:     play a sound file
+#   attention: request window attention (taskbar flash/urgency hint)
+#   title:     add a bell marker to the window/tab title
+#   border:    flash the window border
+bell-features = system
+
+# ---------------------------------------------------------------
+# Keybinds
+# ---------------------------------------------------------------
+# Format: keybind = trigger=action
+# List defaults: ghostty +list-keybinds --default
+# keybind = ctrl+shift+r=reload_config
+# keybind = ctrl+shift+n=new_window
+
+# Toggle fullscreen.
+# keybind = f11=toggle_fullscreen
+
+# Toggle window decorations on/off at runtime (Linux only).
+keybind = ctrl+shift+d=toggle_window_decorations
