@@ -13,6 +13,7 @@ configure helix
 - install groovy lsp from [GitHub](https://github.com/GroovyLanguageServer/groovy-language-server)
 - install harper-ls from [GitHub](https://github.com/Automattic/harper)
 - install merge-conflict-assistant from [GitHub](https://github.com/shaleh/merge-conflict-assistant)
+- install pytest-language-server from [GitHub](https://github.com/bellini666/pytest-language-server)
 - configure config.toml
 - configure languages.toml
 
